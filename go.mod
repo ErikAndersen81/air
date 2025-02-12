@@ -1,4 +1,4 @@
-module github.com/air-verse/air
+module github.com/ErikAndersen81/air
 
 go 1.24
 
