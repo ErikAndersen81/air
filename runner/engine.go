@@ -480,7 +480,7 @@ func (e *Engine) runCommandCopyOutput(command string) (string, error) {
 
 // run cmd option in .air.toml
 func (e *Engine) building() (string, error) {
-	e.buildLog("building...")
+	e.buildLog("building... ...")
 	output, err := e.runCommandCopyOutput(e.config.Build.Cmd)
 	if err != nil {
 		return output, err
