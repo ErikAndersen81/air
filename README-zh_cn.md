@@ -1,4 +1,4 @@
-# Air [![Go](https://github.com/air-verse/air/actions/workflows/release.yml/badge.svg)](https://github.com/air-verse/air/actions?query=workflow%3AGo+branch%3Amaster) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/dcb95264cc504cad9c2a3d8b0795a7f8)](https://www.codacy.com/gh/air-verse/air/dashboard?utm_source=github.com&utm_medium=referral&utm_content=air-verse/air&utm_campaign=Badge_Grade) [![Go Report Card](https://goreportcard.com/badge/github.com/air-verse/air)](https://goreportcard.com/report/github.com/air-verse/air) [![codecov](https://codecov.io/gh/air-verse/air/branch/master/graph/badge.svg)](https://codecov.io/gh/air-verse/air)
+# Air [![Go](https://github.com/ErikAndersen81/air/actions/workflows/release.yml/badge.svg)](https://github.com/ErikAndersen81/air/actions?query=workflow%3AGo+branch%3Amaster) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/dcb95264cc504cad9c2a3d8b0795a7f8)](https://www.codacy.com/gh/ErikAndersen81/air/dashboard?utm_source=github.com&utm_medium=referral&utm_content=ErikAndersen81/air&utm_campaign=Badge_Grade) [![Go Report Card](https://goreportcard.com/badge/github.com/ErikAndersen81/air)](https://goreportcard.com/report/github.com/ErikAndersen81/air) [![codecov](https://codecov.io/gh/ErikAndersen81/air/branch/master/graph/badge.svg)](https://codecov.io/gh/ErikAndersen81/air)
 
 :cloud: 热重载 Go 应用的工具
 
@@ -45,17 +45,17 @@ air --build.cmd "go build -o bin/api cmd/run.go" --build.bin "./bin/api" --build
 使用 go 1.23 或更高版本:
 
 ```shell
-go install github.com/air-verse/air@latest
+go install github.com/ErikAndersen81/air@latest
 ```
 
 ### 使用 install.sh
 
 ```shell
 # binary 文件会是在 $(go env GOPATH)/bin/air
-curl -sSfL https://raw.githubusercontent.com/air-verse/air/master/install.sh | sh -s -- -b $(go env GOPATH)/bin
+curl -sSfL https://raw.githubusercontent.com/ErikAndersen81/air/master/install.sh | sh -s -- -b $(go env GOPATH)/bin
 
 # 或者把它安装在 ./bin/ 路径下
-curl -sSfL https://raw.githubusercontent.com/air-verse/air/master/install.sh | sh -s
+curl -sSfL https://raw.githubusercontent.com/ErikAndersen81/air/master/install.sh | sh -s
 
 air -v
 ```

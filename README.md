@@ -1,6 +1,6 @@
 # :cloud: Air - Live reload for Go apps
 
-[![Go](https://github.com/air-verse/air/actions/workflows/release.yml/badge.svg)](https://github.com/air-verse/air/actions?query=workflow%3AGo+branch%3Amaster) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/dcb95264cc504cad9c2a3d8b0795a7f8)](https://www.codacy.com/gh/air-verse/air/dashboard?utm_source=github.com&utm_medium=referral&utm_content=air-verse/air&utm_campaign=Badge_Grade) [![Go Report Card](https://goreportcard.com/badge/github.com/air-verse/air)](https://goreportcard.com/report/github.com/air-verse/air) [![codecov](https://codecov.io/gh/air-verse/air/branch/master/graph/badge.svg)](https://codecov.io/gh/air-verse/air)
+[![Go](https://github.com/ErikAndersen81/air/actions/workflows/release.yml/badge.svg)](https://github.com/ErikAndersen81/air/actions?query=workflow%3AGo+branch%3Amaster) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/dcb95264cc504cad9c2a3d8b0795a7f8)](https://www.codacy.com/gh/ErikAndersen81/air/dashboard?utm_source=github.com&utm_medium=referral&utm_content=ErikAndersen81/air&utm_campaign=Badge_Grade) [![Go Report Card](https://goreportcard.com/badge/github.com/ErikAndersen81/air)](https://goreportcard.com/report/github.com/ErikAndersen81/air) [![codecov](https://codecov.io/gh/ErikAndersen81/air/branch/master/graph/badge.svg)](https://codecov.io/gh/ErikAndersen81/air)
 
 ![air](docs/air.png)
 
@@ -30,12 +30,14 @@ Note: This tool has nothing to do with hot-deploy for production.
 
 Support air config fields as arguments:
 
-You can view the available command-line arguments by running the following commands:  
+You can view the available command-line arguments by running the following commands:
 
 ```
 air -h
 ```
-or  
+
+or
+
 ```
 air --help
 ```
@@ -59,17 +61,17 @@ air --build.cmd "go build -o bin/api cmd/run.go" --build.bin "./bin/api" --build
 With go 1.23 or higher:
 
 ```bash
-go install github.com/air-verse/air@latest
+go install github.com/ErikAndersen81/air@latest
 ```
 
 ### Via install.sh
 
 ```shell
 # binary will be $(go env GOPATH)/bin/air
-curl -sSfL https://raw.githubusercontent.com/air-verse/air/master/install.sh | sh -s -- -b $(go env GOPATH)/bin
+curl -sSfL https://raw.githubusercontent.com/ErikAndersen81/air/master/install.sh | sh -s -- -b $(go env GOPATH)/bin
 
 # or install it into ./bin/
-curl -sSfL https://raw.githubusercontent.com/air-verse/air/master/install.sh | sh -s
+curl -sSfL https://raw.githubusercontent.com/ErikAndersen81/air/master/install.sh | sh -s
 
 air -v
 ```
@@ -78,10 +80,10 @@ air -v
 
 ```shell
 # binary will be /usr/local/bin/air
-curl -sSfL https://goblin.run/github.com/air-verse/air | sh
+curl -sSfL https://goblin.run/github.com/ErikAndersen81/air | sh
 
 # to put to a custom path
-curl -sSfL https://goblin.run/github.com/air-verse/air | PREFIX=/tmp sh
+curl -sSfL https://goblin.run/github.com/ErikAndersen81/air | PREFIX=/tmp sh
 ```
 
 ### Docker/Podman
@@ -223,7 +225,7 @@ FROM golang:1.23-alpine
 
 WORKDIR /app
 
-RUN go install github.com/air-verse/air@latest
+RUN go install github.com/ErikAndersen81/air@latest
 
 COPY go.mod go.sum ./
 RUN go mod download
@@ -260,11 +262,11 @@ export PATH=$PATH:$(go env GOPATH)/bin #Confirm this line in your .profile and m
 
 ### Error under wsl when ' is included in the bin
 
-Should use `\` to escape the `'` in the bin. related issue: [#305](https://github.com/air-verse/air/issues/305)
+Should use `\` to escape the `'` in the bin. related issue: [#305](https://github.com/ErikAndersen81/air/issues/305)
 
 ### Question: how to do hot compile only and do not run anything?
 
-[#365](https://github.com/air-verse/air/issues/365)
+[#365](https://github.com/ErikAndersen81/air/issues/365)
 
 ```toml
 [build]
@@ -273,7 +275,7 @@ Should use `\` to escape the `'` in the bin. related issue: [#305](https://githu
 
 ### How to Reload the Browser Automatically on Static File Changes
 
-Refer to issue [#512](https://github.com/air-verse/air/issues/512) for additional details.
+Refer to issue [#512](https://github.com/ErikAndersen81/air/issues/512) for additional details.
 
 - Ensure your static files in `include_dir`, `include_ext`, or `include_file`.
 - Ensure your HTML has a `</body>` tag
@@ -325,7 +327,7 @@ git push origin v1.xx.x
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=air-verse/air&type=Date)](https://star-history.com/#air-verse/air&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=ErikAndersen81/air&type=Date)](https://star-history.com/#ErikAndersen81/air&Date)
 
 ## Sponsor
 

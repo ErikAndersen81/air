@@ -1,6 +1,6 @@
 # :cloud: Air - Live reload for Go apps
 
-[![Go](https://github.com/air-verse/air/actions/workflows/release.yml/badge.svg)](https://github.com/air-verse/air/actions?query=workflow%3AGo+branch%3Amaster) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/dcb95264cc504cad9c2a3d8b0795a7f8)](https://www.codacy.com/gh/air-verse/air/dashboard?utm_source=github.com&utm_medium=referral&utm_content=air-verse/air&utm_campaign=Badge_Grade) [![Go Report Card](https://goreportcard.com/badge/github.com/air-verse/air)](https://goreportcard.com/report/github.com/air-verse/air) [![codecov](https://codecov.io/gh/air-verse/air/branch/master/graph/badge.svg)](https://codecov.io/gh/air-verse/air)
+[![Go](https://github.com/ErikAndersen81/air/actions/workflows/release.yml/badge.svg)](https://github.com/ErikAndersen81/air/actions?query=workflow%3AGo+branch%3Amaster) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/dcb95264cc504cad9c2a3d8b0795a7f8)](https://www.codacy.com/gh/ErikAndersen81/air/dashboard?utm_source=github.com&utm_medium=referral&utm_content=ErikAndersen81/air&utm_campaign=Badge_Grade) [![Go Report Card](https://goreportcard.com/badge/github.com/ErikAndersen81/air)](https://goreportcard.com/report/github.com/ErikAndersen81/air) [![codecov](https://codecov.io/gh/ErikAndersen81/air/branch/master/graph/badge.svg)](https://codecov.io/gh/ErikAndersen81/air)
 
 ![air](docs/air.png)
 
@@ -45,17 +45,17 @@ air --build.cmd "go build -o bin/api cmd/run.go" --build.bin "./bin/api" --build
 需要使用 go 1.23 或更高版本：
 
 ```bash
-go install github.com/air-verse/air@latest
+go install github.com/ErikAndersen81/air@latest
 ```
 
 ### 透過 install.sh
 
 ```shell
 # binary will be $(go env GOPATH)/bin/air
-curl -sSfL https://raw.githubusercontent.com/air-verse/air/master/install.sh | sh -s -- -b $(go env GOPATH)/bin
+curl -sSfL https://raw.githubusercontent.com/ErikAndersen81/air/master/install.sh | sh -s -- -b $(go env GOPATH)/bin
 
 # or install it into ./bin/
-curl -sSfL https://raw.githubusercontent.com/air-verse/air/master/install.sh | sh -s
+curl -sSfL https://raw.githubusercontent.com/ErikAndersen81/air/master/install.sh | sh -s
 
 air -v
 ```
@@ -64,10 +64,10 @@ air -v
 
 ```shell
 # binary will be /usr/local/bin/air
-curl -sSfL https://goblin.run/github.com/air-verse/air | sh
+curl -sSfL https://goblin.run/github.com/ErikAndersen81/air | sh
 
 # to put to a custom path
-curl -sSfL https://goblin.run/github.com/air-verse/air | PREFIX=/tmp sh
+curl -sSfL https://goblin.run/github.com/ErikAndersen81/air | PREFIX=/tmp sh
 ```
 
 ### 透過 `go install`
@@ -75,7 +75,7 @@ curl -sSfL https://goblin.run/github.com/air-verse/air | PREFIX=/tmp sh
 使用 go 1.18 或更高版本:
 
 ```bash
-go install github.com/air-verse/air@latest
+go install github.com/ErikAndersen81/air@latest
 ```
 
 ### Docker/Podman
@@ -216,7 +216,7 @@ FROM golang:1.21-alpine
 
 WORKDIR /app
 
-RUN go install github.com/air-verse/air@latest
+RUN go install github.com/ErikAndersen81/air@latest
 
 COPY go.mod go.sum ./
 RUN go mod download
@@ -253,7 +253,7 @@ export PATH=$PATH:$(go env GOPATH)/bin <---- Confirm this line in you profile!!!
 
 ### 當 bin 中包含 ' 時，在 wsl 下的錯誤
 
-應該使用 `\` 來轉義 bin 中的 `'。相關議題：[#305](https://github.com/air-verse/air/issues/305)
+應該使用 `\` 來轉義 bin 中的 `'。相關議題：[#305](https://github.com/ErikAndersen81/air/issues/305)
 
 ## 開發
 
@@ -294,7 +294,7 @@ git push origin v1.xx.x
 
 ## 星星歷史
 
-[![Star History Chart](https://api.star-history.com/svg?repos=air-verse/air&type=Date)](https://star-history.com/#air-verse/air&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=ErikAndersen81/air&type=Date)](https://star-history.com/#ErikAndersen81/air&Date)
 
 ## 贊助專案
 
